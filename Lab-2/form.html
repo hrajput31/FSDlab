@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune City Feedback Form</title>
+    <link rel="stylesheet" href="stylish.css">
+    <link href="x.png" rel="icon" type="imagelico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="headz">
+        <h1 class="text-center mb-4">Pune City Feedback Form</h1>
+        <form action="/submit_feedback" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                Name
+                <input type="text" class="form-control" id="name" name="name" pattern="[A-Za-z\s]{2,}" required title="Please enter a valid name with letters only">
+            </div>
+            
+            <div class="mb-3">
+                E-mail
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            
+            <div class="mb-3">
+                Feedback
+                <textarea class="form-control" id="feedback" name="feedback" rows="4" required></textarea>
+            </div>
+            
+            <div class="mb-3">
+                Insert file here
+                <input type="file" class="form-control" id="file" name="file">
+            </div>
+            
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="bodyy">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html">Pune City</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="college.html">College</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="transport.html">Transport</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="places.html">Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Form</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Nearby Places
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="">Lonavala</a></li>
+                      <li><a class="dropdown-item" href="#">Khopoli</a></li>
+                      <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav>
+
+</body>
+</html>
