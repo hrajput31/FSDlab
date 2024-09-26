@@ -1,0 +1,35 @@
+/* Background color for the entire page */
+body {
+  background-color: #e9ecef; /* Light gray background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background and styling for the Resume Builder container */
+.resume-builder {
+  background-color: #ffffff; /* White background for the form container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 40px auto; /* Center the container */
+}
+
+.resume-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.resume-form textarea {
+  resize: none;
+}
+
+h1 {
+  color: #343a40;
+}
+
+button {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 10px;
+}
